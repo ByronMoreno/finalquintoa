@@ -80,7 +80,7 @@ jobs:
           docker stack rm cristhian || true          
     
           echo "==> descargando la imagen del GHCR"
-          docker pull ghcr.io/byronmoreno/finalquintoa:1.0.0
+          # docker pull ghcr.io/byronmoreno/finalquintoa:1.0.0
 
           echo "==> Desplegando stack..."
           docker stack deploy -c stack.yml --with-registry-auth cristhian
