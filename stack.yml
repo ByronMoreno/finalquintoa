@@ -22,8 +22,8 @@ services:
         - "traefik.http.routers.moreno-secure.service=moreno"
         - "traefik.http.services.moreno.loadbalancer.server.port=5000"
         - "traefik.docker.network=traefik-public"
-      networks:
-        - traefik-public
+    networks:
+      - traefik-public
 
 networks:
   traefik-public:
